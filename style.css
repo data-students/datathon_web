@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 
@@ -35,6 +35,11 @@ body {
   color: white;
 }
 
+.header > p {
+  font-family: var(--font-title);
+  font-size: 2em;
+  font-weight: bolder;
+}
 
 .particles-js-canvas-el{
   position: absolute;
@@ -46,6 +51,10 @@ body {
 
 h1, h2, h3 {
   margin: 0px;
+}
+
+p {
+  line-height: 25px;
 }
 
 h1 {
@@ -136,7 +145,6 @@ h3 {
 .card p {
   font-family: var(--font-p);
   font-size: 1.2em;
-  margin-top: 0px;
 }
 
 
@@ -186,15 +194,62 @@ h3 {
 
 
 @media only screen and (max-width: 600px) {
+  .header > div {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .header > p {
+    font-size: 2em;
+  }
+
   h1 {
-    font-size: 1.8em;
+    font-size: 2.8em;
   }
 
   h2 {
-    font-size: 1.4em;
+    font-size: 1.8em;
   }
 
   .cols3 {
     grid-template-columns: 1fr;
+  }
+
+  .cols2 {
+    grid-template-columns: 1fr;
+  }
+
+  .fullwidth, .fullwidth-with-title, .cols2, .cols3 {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .callout-with-image, .callout {
+    width: 80vw
+  }
+
+  .callout-with-image h3, .callout h3{
+    font-size: 2.5em;
+  }
+
+  .callout-with-image p, .callout p{
+    font-size: 1.2em;
+    line-height: 25px;
+  }
+
+  .callout-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .callout-with-image:first-child {
+    text-align: center;
+  }
+
+  .callout-with-image img{
+    max-width: 40vw;
+  }
+
+  .sponsors-container {
+    flex-wrap: wrap;
   }
 }
