@@ -8,13 +8,13 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#14c4c6"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#14c4c6"
       },
       "polygon": {
         "nb_sides": 5
@@ -48,9 +48,9 @@ particlesJS("particles-js", {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#14c4c6",
       "opacity": 0.4,
-      "width": 1
+      "width": 3
     },
     "move": {
       "enable": true,
@@ -108,3 +108,28 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+
+// setup over-drawing
+const ctx = document.querySelector('#particles-js > canvas').getContext('2d');
+let grad;
+onresize();
+addEventListener('resize', onresize);
+
+function onresize() {
+  grad= ctx.createLinearGradient(0,0,ctx.canvas.width,0);
+  grad.addColorStop(0,'#b20457');
+  grad.addColorStop(0.5,'#011286')
+  grad.addColorStop(1,'#378ba7');
+}
+
+// must be ran after Particles.js' own anim loop has began
+// se we are always pushed after their drawings
+requestAnimationFrame( anim );
+function anim() {
+  ctx.fillStyle = grad;
+  ctx.globalCompositeOperation = "source-atop";
+ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
+  ctx.globalCompositeOperation = "source-over";
+  requestAnimationFrame( anim );
+}

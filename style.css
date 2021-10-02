@@ -1,58 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 
 body {
   padding: 0;
   margin: 0;
+
+  --card-col: rgba(200,200,200, 0.2);
+  --dark-bg: #010124;
+  --the-gradient: linear-gradient(90deg, rgba(178,4,87,1) 0%, rgba(1,18,134,1) 50%, rgba(55,139,167,1) 100%);
+
+  --font-title: 'Turret Road';
+  --font-p: 'Raleway';
+  --font-datathonfme: 'Cutive Mono', 'Space Mono';
 }
 
-#particles-js{
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;/*#003F5C;*/
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-#title-container {
-  width: 100%;
-  position: absolute;
-  /*background-color: rgba(255,255,255,0.4);*/
+.dark-bg {
+  background-color: var(--dark-bg);
   color: white;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 15px;
-
-  text-align: center;
 }
 
-h1, h2 {
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #010124;
+  color: white;
+}
+
+
+.particles-js-canvas-el{
+  position: absolute;
+  height: 95vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+h1, h2, h3 {
   margin: 0px;
 }
 
-#title-container h1 {
-  font-size: 2em;
-  font-family: 'Audiowide';
+h1 {
+  font-size: 4.5em;
+  font-family: var(--font-title);
 }
 
-#title-container h2 {
-  font-size: 1.6em;
-  font-family: 'Space Mono';
+h2 {
+  font-size: 2em;
+  font-family: var(--font-datathonfme);
 }
+
+h3 {
+  font-size: 2em;
+  font-family: var(--font-title);
+}
+
+.btn {
+  padding: 10px;
+  color: inherit;
+  font-family: var(--font-p);
+  background-color: transparent;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: var(--the-gradient) 1;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-image-outset: 2px;
+}
+
+
+/***
+  LAYOUT ELEMENTS
+***/
+.cols3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+
+  padding: 50px 100px 50px 100px;
+}
+
+.cols2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+
+  padding: 50px 100px 50px 100px;
+}
+
+.fullwidth {
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 100px 50px 100px;
+}
+
+.fullwidth-with-title {
+  text-align: center;
+  padding: 50px 100px 50px 100px;
+}
+
+
+/***
+  STYLED CONTAINERS
+***/
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+
+  font-family: 'Space Mono';
+  background-color: var(--card-col);
+}
+
+.card h3 {
+  font-family: var(--font-title);
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.card p {
+  font-family: var(--font-p);
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+
+
+.callout {
+  width: 50vw;
+}
+
+.callout-with-image {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 40px;
+
+  padding: 20px;
+  border-radius: 10px;
+  width: 50vw;
+
+  /*background-color: var(--card-col);*/
+}
+
+.callout-with-image img {
+  max-width: 100%;
+}
+
+.callout h3, .callout-with-image h3{
+  font-family: var(--font-title);
+  font-size: 2.8em;
+  margin: 0px;
+}
+
+.callout p, .callout-with-image p {
+  font-family: var(--font-p);
+  font-size: 1.2em;
+}
+
+
+.sponsors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sponsors-container img {
+  max-width: 160px;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
-  #title-container h1 {
+  h1 {
     font-size: 1.8em;
   }
 
-  #title-container h2 {
+  h2 {
     font-size: 1.4em;
+  }
+
+  .cols3 {
+    grid-template-columns: 1fr;
   }
 }
