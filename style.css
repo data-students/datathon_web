@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-
 
 body {
   padding: 0;
@@ -17,7 +11,6 @@ body {
 
   --font-title: 'Turret Road';
   --font-p: 'Raleway';
-  --font-datathonfme: 'Cutive Mono', 'Space Mono';
 }
 
 .dark-bg {
@@ -63,14 +56,15 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
-  font-family: var(--font-datathonfme);
+  font-size: 2.5em;
+  font-family: var(--font-title);
 }
 
 h3 {
   font-size: 2em;
   font-family: var(--font-title);
 }
+
 
 .btn {
   padding: 10px;
@@ -145,10 +139,16 @@ h3 {
 .card p {
   font-family: var(--font-p);
   font-size: 1.2em;
+  text-align: justify;
+}
+
+.card a{
+  color: white;
 }
 
 
 .callout {
+  padding-top: 60px;
   width: 50vw;
 }
 
@@ -181,19 +181,21 @@ h3 {
 
 
 .sponsors-container {
+  padding-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .sponsors-container img {
-  max-width: 160px;
+  max-height: 200px;
+  margin: 0 20px;
 }
 
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .header > div {
     width: 80vw;
     margin-left: 10vw;
@@ -212,20 +214,19 @@ h3 {
     font-size: 1.8em;
   }
 
-  .cols3 {
+  .cols3, .cols2 {
     grid-template-columns: 1fr;
-  }
-
-  .cols2 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .fullwidth, .fullwidth-with-title, .cols2, .cols3 {
     padding: 40px 20px 40px 20px;
   }
 
-  .callout-with-image, .callout {
-    width: 80vw
+  .callout-with-image, .callout, .card {
+    width: 80vw;
   }
 
   .callout-with-image h3, .callout h3{
