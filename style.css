@@ -292,5 +292,6 @@ h3 {
   .sponsors-container img{
     max-width: 80%;
     height: auto;
+    margin: 20px 0;
   }
 }
