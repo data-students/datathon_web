@@ -122,6 +122,10 @@ h3 {
   padding: 50px 100px 50px 100px;
 }
 
+.fullwidth {
+
+}
+
 .fullwidth-with-title {
   text-align: center;
   padding: 50px 100px 50px 100px;
@@ -233,6 +237,19 @@ h3 {
   font-family: var(--font-p);
   margin: 5%;
 }
+
+.footer{
+  font-family: var(--font-p);
+  margin: 0 0 5% 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer{
+  text-decoration: none;
+}
+
 
 @media only screen and (max-width: 1000px) {
 
