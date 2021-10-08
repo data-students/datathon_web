@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
 
 body {
@@ -238,6 +238,16 @@ h3 {
   margin: 5%;
 }
 
+.gdpr{
+  border: 1px solid white;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.gdpr td{
+  padding: 5px;
+}
+
 .footer{
   font-family: var(--font-p);
   margin: 0 0 45px 0;
@@ -249,6 +259,8 @@ h3 {
 .footer{
   text-decoration: none;
 }
+
+
 
 
 @media only screen and (max-width: 1000px) {
