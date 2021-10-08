@@ -229,6 +229,11 @@ h3 {
   margin: 0 10px;
 }
 
+.legal{
+  font-family: var(--font-p);
+  margin: 5%;
+}
+
 @media only screen and (max-width: 1000px) {
 
   .header > div {
