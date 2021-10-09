@@ -238,6 +238,10 @@ h3 {
   margin: 5%;
 }
 
+.legal a{
+  color: white;
+}
+
 .gdpr{
   border: 1px solid white;
   border-collapse: collapse;
