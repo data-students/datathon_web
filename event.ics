@@ -30,7 +30,7 @@ DTSTAMP:20211013T132333Z
 DTSTART;VALUE=DATE:20211113
 DTEND;VALUE=DATE:20211115
 SUMMARY:Datathon FME - The Barcelona Challenge
-URL:https://twitter.com/datastudents
+URL:https://datathon.cat
 DESCRIPTION:Datathon FME is a weekend-long competition where you are challenged to work on real-world business cases from different areas of Machine Learning\, AI\, and Data Science. You are given some datasets in order to answer questions or implement solutions. In this occasion\, challenges will be related with the city of Barcelona!
 LOCATION:FME (C. Pau Gargallo\, 14. 08028 Barcelona)
 ORGANIZER:mailto:datathon.fme@upc.edu
