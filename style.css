@@ -254,16 +254,12 @@ h3 {
 
 .footer{
   font-family: var(--font-p);
-  margin: 0 0 45px 0;
+  font-size: 12px;
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
-
-.footer{
   text-decoration: none;
 }
-
 
 
 
