@@ -226,11 +226,11 @@ h3 {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn-group .btn{
-  width: 100px;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 .legal{
