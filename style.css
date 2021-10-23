@@ -90,7 +90,7 @@ h3 {
 
 .btn:hover {
   cursor: pointer;
-  border-image-outset: 2px;
+  border-image-outset: 3px;
 }
 
 .header a{
@@ -121,10 +121,6 @@ h3 {
   justify-content: center;
 
   padding: 50px 100px 50px 100px;
-}
-
-.fullwidth {
-
 }
 
 .fullwidth-with-title {
@@ -234,8 +230,12 @@ h3 {
   margin: 0 20px;
 }
 
+.svg{
+  -webkit-transform: translate3d(0,0,0);
+}
+
 .header .btn {
-  font-size: 20px;
+  font-size: 20px!important;
 }
 
 .btn-group{
