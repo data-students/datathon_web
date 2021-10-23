@@ -230,10 +230,6 @@ h3 {
   margin: 0 20px;
 }
 
-.svg{
-  -webkit-transform: translate3d(0,0,0);
-}
-
 .header .btn {
   font-size: 20px!important;
 }
