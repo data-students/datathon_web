@@ -1,10 +1,10 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 137,
+      "value": 100,
       "density": {
         "enable": true,
-        "value_area": 1025.8919341219544
+        "value_area": 500
       }
     },
     "color": {
@@ -118,9 +118,13 @@ addEventListener('resize', onresize);
 
 function onresize() {
   grad= ctx.createLinearGradient(0,0,ctx.canvas.width,0);
-  grad.addColorStop(0,'#b20457');
-  grad.addColorStop(0.5,'#011286')
-  grad.addColorStop(1,'#378ba7');
+  //grad.addColorStop(0,'#b20457');
+  //grad.addColorStop(0.5,'#011286')
+  //grad.addColorStop(1,'#378ba7');
+
+  grad.addColorStop(0,'#fde725');
+  grad.addColorStop(0.5,'#21918c')
+  grad.addColorStop(1,'#440154');
 }
 
 // must be ran after Particles.js' own anim loop has began
