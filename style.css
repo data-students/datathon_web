@@ -74,6 +74,7 @@ h1, h2, h3 {
 p {
   line-height: 25px;
   text-align: justify;
+  font-family: var(--font-p);
 }
 
 h1 {
@@ -100,6 +101,12 @@ h3 {
 .btn_light_link:link {color: white; text-decoration: none;}
 .btn_light_link:visited {color: white; text-decoration: none;}
 .btn_light_link:hover {color: white; text-decoration: none;}
+
+.btn_contrast_link{color: var(--contrast-col);}
+.btn_contrast_link:link {color: var(--contrast-col);}
+.btn_contrast_link:visited {color: var(--contrast-col);}
+.btn_contrast_link:hover {color: var(--contrast-col);}
+
 
 /*.btn {
   padding: 10px;
@@ -153,6 +160,13 @@ h3 {
   grid-gap: 40px;
 
   padding: 50px 100px 50px 100px;
+}
+
+.fullwidth-small {
+  display: flex;
+  justify-content: center;
+
+  padding: 0 100px 0 100px;
 }
 
 .fullwidth {
