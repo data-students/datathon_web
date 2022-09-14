@@ -8,7 +8,7 @@ body {
   --card-col: rgba(200,200,200, 0.2);
   --title-col: #000;/*rgb(82, 30, 91);*/
   --contrast-col: #21918c;
-  --dark-bg: #fff;
+  --bg: #fff;
   --the-gradient: linear-gradient(90deg, rgba(178,4,87,1) 0%, rgba(1,18,134,1) 50%, rgba(55,139,167,1) 100%);
 
   --font-title: 'Turret Road';
@@ -17,8 +17,8 @@ body {
   overflow-x: hidden; 
 }
 
-.dark-bg {
-  background-color: var(--dark-bg);
+.light-bg {
+  background-color: var(--bg);
   color: black;
 }
 
