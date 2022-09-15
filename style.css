@@ -168,6 +168,10 @@ h3 {
   padding: 0 100px 0 100px;
 }
 
+.fullwidth-small p {
+  text-align: center;
+}
+
 .fullwidth {
   display: flex;
   justify-content: center;
