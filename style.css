@@ -279,7 +279,7 @@ h3 {
 .sponsors-container {
   padding-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
