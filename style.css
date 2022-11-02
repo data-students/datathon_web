@@ -333,7 +333,7 @@ h3 {
 
 
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
 
   .header > div {
     width: 80vw;
@@ -347,7 +347,7 @@ h3 {
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
 
   h2 {
@@ -390,9 +390,9 @@ h3 {
     max-width: 40vw;
   }
 
-  .sponsors-container {
+  /* .sponsors-container {
     flex-wrap: wrap;
-  }
+  } */
   .sponsors-container img{
     max-width: 80%;
     height: auto;
