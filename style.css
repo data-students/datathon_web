@@ -279,7 +279,7 @@ h3 {
 .sponsors-container {
   padding-top: 30px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
@@ -395,13 +395,18 @@ h3 {
     max-width: 40vw;
   }
 
-  /* .sponsors-container {
+  .sponsors-container {
+    justify-content: space-evenly;
     flex-wrap: wrap;
-  } */
+    padding: 20px;
+  }
   .sponsors-container img{
-    max-width: 80%;
-    height: auto;
     margin: 20px 0;
+  }
+
+  .big-sponsors img{
+    width: 80vw;
+    height:auto;
   }
 
   #logo-container img {
