@@ -17,7 +17,28 @@
     @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Turret+Road:wght@700&display=swap');
 
     body {
+      margin: 0;
       font-family: 'Bai Jamjuree', sans-serif;
+    }
+
+    html {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      scroll-snap-align: start;
+    }
+
+    .full {
+      text-align: center;
+      justify-content: center;
+      backdrop-filter: blur(100px);
+      margin: 0;
     }
 
     .anim {
@@ -27,6 +48,7 @@
       top: -10%;
       left: 50%;
       transform: translateX(-50%);
+      z-index: -10;
     }
 
     .anim svg {
@@ -37,19 +59,13 @@
       stroke-width: 25;
     }
 
-    .container {
-      display: flex;
-    }
-
     .header {
-      background-color: rgba(127, 192, 181, 0.8);
       backdrop-filter: blur(10px);
-      position: fixed;
+      position: relative;
       top: 0%;
       text-align: left;
-      padding: 2%;
-      margin-top: 2%;
-      margin-left: 5%;
+      padding: 3%;
+      width: fit-content;
       z-index: 10000;
     }
 
@@ -59,51 +75,60 @@
       user-select: none;
     }
 
-    .button-54 {
-      font-family: "Open Sans", sans-serif;
-      background: transparent;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-decoration: none;
-      text-transform: uppercase;
+    /* CSS */
+    .button-59 {
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #000;
+      box-sizing: border-box;
       color: #000;
       cursor: pointer;
-      border: 3px solid;
-      border-radius: 5px;
-      padding: 0.25em 0.5em;
-      box-shadow: 1px -1px 0px 0px,
-        2px -2px 0px 0px,
-        3px -3px 0px 0px,
-        4px -4px 0px 0px,
-        5px -5px 0px 0px;
-      position: relative;
+      display: inline-flex;
+      fill: #000;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      height: 48px;
+      justify-content: center;
+      letter-spacing: -.8px;
+      line-height: 24px;
+      min-width: 140px;
+      outline: 0;
+      padding: 0 17px;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s;
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
+    }
+
+    .button-59:focus {
+      color: #171e29;
+    }
+
+    .button-59:hover {
+      border-color: #06f;
+      color: #06f;
+      fill: #06f;
+    }
+
+    .button-59:active {
+      border-color: #06f;
+      color: #06f;
+      fill: #06f;
+    }
+
+    @media (min-width: 768px) {
+      .button-59 {
+        min-width: 170px;
+      }
     }
 
     .button-54:hover {
       transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
       box-shadow: 0px 0px 0px 0px;
     }
-
-    @media (min-width: 768px) {
-      .button-54 {
-        padding: 0.25em 0.75em;
-      }
-
-      h1 {
-        font-size: 3rem;
-      }
-    }
-
-    @media (min-width: 1000px) {
-
-      h1 {
-        font-size: 3rem;
-      }
-    }
-
 
     h1 {
       font-size: 4.5rem;
@@ -114,6 +139,12 @@
     p {
       font-size: 1.7rem;
       margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em !important;
+      }
     }
   </style>
   <script type="module">
@@ -138,15 +169,18 @@
 </head>
 
 <body>
-  <div class="container">
+  <section>
     <div class="header">
       <img src="./img/logo-datathon.png" alt="datathon.cat" width="200px" />
       <h1>datathon fme</h1>
       <p>November 11-12 2023</p>
       <br>
-      <button class="button-54" role="button">Sign up</button>
+      <button class="button-59" role="button">Sign up</button>
     </div>
-  </div>
+  </section>
+  <section class="full">
+    <h2>hola!</h2>
+  </section>
   <div class="anim">
     <svg viewBox="0 0 2386 1253" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path opacity="0.5"
