@@ -1,5 +1,41 @@
 {
+  "name": "datathon_web",
+  "version": "3.0.0",
+  "main": "app.js",
   "dependencies": {
     "animejs": "^3.2.1"
-  }
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "favicons-webpack-plugin": "^6.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --mode=development"
+  },
+  "keywords": [
+    "datathon.cat",
+    "datathon",
+    "Barcelona",
+    "data",
+    "data science",
+    "UPC",
+    "FME",
+    "Catalunya",
+    "Catalonia",
+    "hackathon",
+    "ML",
+    "machine learning",
+    "AI",
+    "artificial intelligence",
+    "November",
+    "11-12 November"
+  ],
+  "author": "Associació d'Estudiants de Dades",
+  "license": "ISC",
+  "description": "A weekend-long competition where you are challenged to work on real-world business cases from different areas of machine learning, AI, and data science. You are given some datasets in order to answer questions or implement solutions. This November in Barcelona!"
 }

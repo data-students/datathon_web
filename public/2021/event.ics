@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AED//Calendar
+X-WR-CALNAME:AED
+NAME:AED
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+LAST-MODIFIED:20201011T015911Z
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20211013T132333Z
+DTSTART;VALUE=DATE:20211113
+DTEND;VALUE=DATE:20211115
+SUMMARY:Datathon FME - The Barcelona Challenge
+URL:https://datathon.cat
+DESCRIPTION:Datathon FME is a weekend-long competition where you are challenged to work on real-world business cases from different areas of Machine Learning\, AI\, and Data Science. You are given some datasets in order to answer questions or implement solutions. In this occasion\, challenges will be related with the city of Barcelona!
+LOCATION:FME (C. Pau Gargallo\, 14. 08028 Barcelona)
+ORGANIZER:mailto:datathon.fme@upc.edu
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Datathon FME - The Barcelona Challenge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
