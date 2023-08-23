@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
@@ -7,12 +9,21 @@ module.exports = {
   entry: {
     app: './src/app.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
       chunks: ['app'],
       filename: 'index.html',
     }),
+    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [{ from: 'public' }],
     }),
@@ -33,6 +44,12 @@ module.exports = {
       },
     }),
   ],
+  optimization: {
+    minimizer: [
+      `...`,
+      new CssMinimizerPlugin(),
+    ],
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),

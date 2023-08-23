@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Turret+Road:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.full {
+  text-align: center;
+  justify-content: center;
+  backdrop-filter: blur(100px);
+  margin: 0;
+}
+
+.anim {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+
+.anim svg {
+  height: 100vh;
+}
+
+.anim path {
+  stroke-width: 25;
+}
+
+.header {
+  backdrop-filter: blur(10px);
+  position: relative;
+  top: 0%;
+  text-align: left;
+  padding: 3%;
+  width: fit-content;
+  z-index: 10000;
+}
+
+.header img {
+  filter: brightness(0);
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+.button-59:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
+}
+
+.button-54:hover {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  box-shadow: 0px 0px 0px 0px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: 'Turret Road', cursive;
+  margin: 0;
+}
+
+p {
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em !important;
+  }
+}
