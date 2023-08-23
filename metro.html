@@ -17,16 +17,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Turret+Road:wght@700&display=swap');
 
     body {
-      font-family: "Open Sans", sans-serif;
       font-family: 'Bai Jamjuree', sans-serif;
     }
 
     .anim {
-      filter: blur(3px);
       height: 100vh;
       overflow: hidden;
       position: fixed;
-      top: -10%;
+      top: -30%;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -36,40 +34,34 @@
     }
 
     .anim path {
-      stroke-width: 5;
+      stroke-width: 25;
     }
 
     .container {
       display: flex;
-      justify-content: center;
     }
 
     .header {
-      background-color: rgba(255, 255, 255, .9);
-      box-shadow: rgb(43, 112, 193) 0px 0px 0px 3px inset,
-        #fff 10px -10px 0px -3px,
-        rgb(250, 174, 13) 10px -10px,
-        #fff 20px -20px 0px -3px,
-        rgb(70, 183, 63) 20px -20px,
-        #fff 30px -30px 0px -3px,
-        rgb(142, 41, 145) 30px -30px,
-        #fff 40px -40px 0px -3px,
-        rgb(233, 35, 50) 40px -40px;
-      margin-right: 40px;
-      padding: 50px 50px;
+      background-color: rgba(127, 192, 181, 0.8);
+      backdrop-filter: blur(10px);
       position: fixed;
-      top: 25%;
-      text-align: center;
+      top: 0%;
+      text-align: left;
+      padding: 2%;
+      margin-top: 2%;
+      margin-left: 5%;
       z-index: 10000;
     }
 
     .header img {
       filter: brightness(0);
       margin-bottom: 10px;
+      user-select: none;
     }
 
     .button-54 {
       font-family: "Open Sans", sans-serif;
+      background: transparent;
       font-size: 16px;
       letter-spacing: 2px;
       text-decoration: none;
@@ -77,6 +69,7 @@
       color: #000;
       cursor: pointer;
       border: 3px solid;
+      border-radius: 5px;
       padding: 0.25em 0.5em;
       box-shadow: 1px -1px 0px 0px,
         2px -2px 0px 0px,
@@ -89,27 +82,38 @@
       touch-action: manipulation;
     }
 
-    .button-54:active {
+    .button-54:hover {
+      transition: cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
       box-shadow: 0px 0px 0px 0px;
-      top: -5px;
-      left: 5px;
     }
 
     @media (min-width: 768px) {
       .button-54 {
         padding: 0.25em 0.75em;
       }
+
+      h1 {
+        font-size: 3rem;
+      }
     }
 
+    @media (min-width: 1000px) {
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+
     h1 {
-      font-size: 7vw;
+      font-size: 4.5rem;
       font-family: 'Turret Road', cursive;
       margin: 0;
     }
 
     p {
-      font-size: 3vw;
-      margin: 0;
+      font-size: 1.7rem;
+      margin: 10px 0;
     }
   </style>
   <script type="module">
@@ -122,8 +126,8 @@
       anime({
         targets: pathEl,
         strokeDashoffset: [offset, 0],
-        duration: anime.random(1000, 1500),
-        delay: anime.random(0, 2000),
+        duration: anime.random(1000, 3500),
+        delay: anime.random(0, 3500),
         loop: true,
         direction: 'alternate',
         easing: 'easeInOutQuad',
