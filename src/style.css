@@ -119,13 +119,46 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
 p {
-  font-size: 1.7rem;
+  font-size: 1.7em;
   margin: 10px 0;
+  text-align: justify;
+}
+
+.square {
+  text-align: left;
+  padding: 3%;
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5em !important;
+  .header {
+    width: 100%;
+    padding: 5%;
   }
+
+  .header img {
+    width: 150px;
+  }
+
+  .square {
+    padding: 5%;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
 }
