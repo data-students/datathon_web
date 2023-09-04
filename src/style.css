@@ -11,11 +11,14 @@ html {
 }
 
 section {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
+}
+
+.full-height {
+  height: 100vh !important;
 }
 
 .full {
@@ -133,6 +136,22 @@ p {
 .square {
   text-align: left;
   padding: 3%;
+}
+
+.cols3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+
+  padding: 3%;
+}
+
+.footer {
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
