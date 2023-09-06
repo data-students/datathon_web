@@ -3,18 +3,19 @@
 body {
   margin: 0;
   font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 16px;
 }
 
-html {
+/*html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-}
+}*/
 
 section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
 }
 
 .full-height {
@@ -127,10 +128,18 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+  font-size: 2em;
+}
+
 p {
-  font-size: 1.7em;
   margin: 10px 0;
   text-align: justify;
+}
+
+.large-text {
+  font-size: 1.5em !important;
 }
 
 .square {
@@ -147,7 +156,7 @@ p {
 }
 
 .footer {
-  font-size: 12px;
+  font-size: 12px !important;
   width: 100%;
   display: flex;
   justify-content: space-around;
