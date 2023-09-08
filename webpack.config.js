@@ -8,7 +8,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
   entry: {
     app: './src/app.js',
-    style: './src/style.js',
+    legal: './src/legal.js',
   },
   module: {
     rules: [
@@ -25,17 +25,17 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/legal.html',
-      chunks: ['style'],
+      chunks: ['legal'],
       filename: 'legal.html',
     }),
     new HtmlWebpackPlugin({
       template: './src/privacy.html',
-      chunks: ['style'],
+      chunks: ['legal'],
       filename: 'privacy.html',
     }),
     new HtmlWebpackPlugin({
       template: './src/terms.html',
-      chunks: ['style'],
+      chunks: ['legal'],
       filename: 'terms.html',
     }),
     new MiniCssExtractPlugin(),
