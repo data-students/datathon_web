@@ -8,6 +8,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 module.exports = {
   entry: {
     app: './src/app.js',
+    style: './src/style.js',
   },
   module: {
     rules: [
@@ -21,7 +22,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       chunks: ['app'],
-      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/legal.html',
+      chunks: ['style'],
+      filename: 'legal.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/privacy.html',
+      chunks: ['style'],
+      filename: 'privacy.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/terms.html',
+      chunks: ['style'],
+      filename: 'terms.html',
     }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
