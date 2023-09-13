@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     app: './src/app.js',
     legal: './src/legal.js',
+    generator: './src/generator.js'
   },
   module: {
     rules: [
@@ -37,6 +38,11 @@ module.exports = {
       template: './src/terms.html',
       chunks: ['legal'],
       filename: 'terms.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/generator.html',
+      chunks: ['generator'],
+      filename: 'generator.html',
     }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
