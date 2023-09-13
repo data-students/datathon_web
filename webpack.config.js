@@ -7,9 +7,9 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/app.js',
-    legal: './src/legal.js',
-    generator: './src/generator.js'
+    app: './src/index/script.js',
+    legal: './src/legal/script.js',
+    generator: './src/generator/script.js'
   },
   module: {
     rules: [
@@ -21,26 +21,27 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index/index.html',
       chunks: ['app'],
+      filename: 'index.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/legal.html',
+      template: './src/legal/legal.html',
       chunks: ['legal'],
       filename: 'legal.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/privacy.html',
+      template: './src/legal/privacy.html',
       chunks: ['legal'],
       filename: 'privacy.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/terms.html',
+      template: './src/legal/terms.html',
       chunks: ['legal'],
       filename: 'terms.html',
     }),
     new HtmlWebpackPlugin({
-      template: './src/generator.html',
+      template: './src/generator/index.html',
       chunks: ['generator'],
       filename: 'generator.html',
     }),

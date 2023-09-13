@@ -1,5 +1,5 @@
 import dateFormat from "dateformat";
-import "./generator.css";
+import "./style.css";
 
 const btn = document.querySelector("#get-code-btn"); // Get the button from the page
 // Detect clicks on the button
