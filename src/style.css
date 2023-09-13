@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background: rgba(33, 145, 140, 0.2);
+}
+
 .full {
   text-align: center;
   justify-content: center;
