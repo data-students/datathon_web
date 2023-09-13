@@ -12,7 +12,6 @@ if (btn) {
       var now = new Date();
       var month = now.getMonth() - 9;
       var s = parseInt(dateFormat(now, `ss MM hh dd ${month}`).replaceAll(' ', '')).toString(36);
-      console.log(s);
       document.querySelector("#code").innerHTML = s;
       document.querySelector("#code-span").classList.toggle("invisible");
     }, 300)
