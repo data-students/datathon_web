@@ -72,8 +72,8 @@ module.exports = {
       patterns: [{ from: 'public' }],
     }),
     new FaviconsWebpackPlugin({
-      logo: './public/img/logo-datathon.png',
-      logoMaskable: './public/img/logo-datathon.png',
+      logo: './public/img/logo-datathon.webp',
+      logoMaskable: './public/img/logo-datathon.webp',
       prefix: '/',
       favicons: {
         appName: 'datathon.cat',
