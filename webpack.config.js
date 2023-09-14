@@ -9,7 +9,7 @@ const title = 'Datathon FME';
 const description = 'Join us in Barcelona on November 11-12 for Datathon FME – sign up now!';
 const image = 'https://datathon.cat/img/promo.jpeg';
 const metaTags = {
-  'description': { name: 'description', contnet: description },
+  'description': { name: 'description', content: description },
   'keyword': { name: 'keywords', content: 'Datathon FME,datathon.cat,datathon,Barcelona,data,data science,UPC,FME,Catalunya,Catalonia,hackathon,ML,machine learning,AI,artificial intelligence,November,11-12 November' },
   'og:title': { property: 'og:title', content: title },
   'og:description': { property: 'og:description', content: description },
