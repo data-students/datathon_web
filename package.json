@@ -1,0 +1,46 @@
+{
+  "name": "datathon_web",
+  "version": "3.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "dateformat": "^5.0.3"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "favicons-webpack-plugin": "^6.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --mode=development"
+  },
+  "keywords": [
+    "datathon.cat",
+    "datathon",
+    "Barcelona",
+    "data",
+    "data science",
+    "UPC",
+    "FME",
+    "Catalunya",
+    "Catalonia",
+    "hackathon",
+    "ML",
+    "machine learning",
+    "AI",
+    "artificial intelligence",
+    "November",
+    "11-12 November"
+  ],
+  "author": "Associació d'Estudiants de Dades",
+  "license": "ISC",
+  "description": "Join us in Barcelona on November 11-12 for Datathon FME – sign up now!"
+}
