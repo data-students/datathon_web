@@ -13,6 +13,14 @@ npm run start
 ```
 3. Remember that the source code is in `./src` while the static assets are in `.public`.
 
+#### Using docker
+1. Open a terminal inside this folder and run the following commands:
+```
+docker build -t datathon_web .
+docker run -p 8080:8000 datathon_web
+```
+2. Go to http://localhost:8080
+
 ### How do I deploy a new version?
 1. Edit whatever you want. Do not manually edit anything in `./dist`. Its contents are automatically generated.
 2. Run `npm run build`.
