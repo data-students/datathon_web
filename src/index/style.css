@@ -25,6 +25,7 @@ body {
   text-align: center;
   justify-content: center;
   backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 }
 
 .anim {
@@ -47,6 +48,7 @@ body {
 
 .header {
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: relative;
   top: 0%;
   text-align: left;
@@ -69,6 +71,7 @@ body {
 
 .light-bg {
   backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   color: black;
 }
 
@@ -506,6 +509,7 @@ br {
 
   .light-bg {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.7);
   }
 
