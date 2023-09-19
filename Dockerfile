@@ -10,4 +10,4 @@ EXPOSE 8080
 
 RUN npm install
 
-ENTRYPOINT npm run start -- --port 8000
+ENTRYPOINT npm run start -- --port 8080
