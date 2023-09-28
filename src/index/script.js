@@ -17,3 +17,11 @@ for (let i = 0; i < pathEls.length; i++) {
     autoplay: true
   });
 }
+
+document.getElementById("page-language").onclick = showLanguages
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function showLanguages() {
+  document.getElementById("other-languages").classList.toggle("show");
+}
