@@ -46,7 +46,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index/index.cat.html',
       chunks: ['app'],
-      filename: 'index.cat.html',
+      filename: 'ca/index.html',
       meta: metaTags,
     }),
     new HtmlWebpackPlugin({
@@ -58,7 +58,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/legal/legal.cat.html',
       chunks: ['legal'],
-      filename: 'legal.cat.html',
+      filename: 'ca/legal.html',
       meta: metaTags,
     }),
     new HtmlWebpackPlugin({
@@ -70,7 +70,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/legal/privacy.cat.html',
       chunks: ['legal'],
-      filename: 'privacy.cat.html',
+      filename: 'ca/privacitat.html',
       meta: metaTags,
     }),
     new HtmlWebpackPlugin({
@@ -82,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/legal/terms.cat.html',
       chunks: ['legal'],
-      filename: 'terms.cat.html',
+      filename: 'ca/termes.html',
       meta: metaTags,
     }),
     new HtmlWebpackPlugin({
