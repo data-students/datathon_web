@@ -29,6 +29,24 @@ body {
   -webkit-backdrop-filter: blur(100px);
 }
 
+.tagline {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+  flex-wrap: nowrap;
+}
+
+.tagline p {
+  font-size: 1.2em !important;
+  margin: 0 !important;
+  white-space: nowrap;
+}
+
+.tagline img {
+  margin: auto !important;
+  max-width: 118px !important;
+}
+
 .anim {
   height: 100vh;
   overflow: hidden;
@@ -440,6 +458,15 @@ br {
 
   h2 {
     font-size: 1.8rem;
+  }
+
+  .tagline p {
+    font-size: 1em !important;
+  }
+
+  .tagline img {
+    height: 20px !important;
+    max-width: 98px !important;
   }
 
   .cols3,
