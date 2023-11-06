@@ -386,7 +386,7 @@ br {
 
 .sponsors-container img {
   max-height: 200px;
-  margin: 0 20px;
+  margin: 20px 20px;
 }
 
 .header .btn {
@@ -517,10 +517,6 @@ br {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
-  }
-
-  .sponsors-container img {
-    margin: 20px 0;
   }
 
   .big-sponsors img {
